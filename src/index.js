@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import SearchMovie from "./components/SearchMovie";
+
 class Main extends React.Component {
   render() {
     return (
-      <h1>Hello world updated!</h1>
+      <div className="container">
+        <h1 className="title">React Movie Search</h1>
+        <SearchMovie />
+      </div>
     );
   }
 }
