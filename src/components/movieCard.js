@@ -22,8 +22,7 @@ export default function MovieCard({movie}){
                 alt={movie.title + ' poster'}
                 />
             <div className="card-content">
-            <h3 
-            className="card-title">{movie.title}</h3>
+            <a href= {`https://www.themoviedb.org/movie/${movie.id}`}><h3 className="card-title">{movie.title}</h3></a>
             <div className="small"><p><b>RELEASE DATE:</b> {movie.release_date}</p></div>
             <div className="small"><p><b>RATING:</b> {movie.vote_average}</p></div>
             <p className="card-desc">{movie.overview}</p>

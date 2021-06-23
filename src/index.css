@@ -91,6 +91,7 @@ small {
   margin-bottom: 0.5rem;
   font-size: 3.2rem;
   text-align: center;
+  
 }
 
 .card-image {
@@ -143,4 +144,24 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: #333;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #3594C0;
+}
+
+a:active {
+  text-decoration: none;
+  color: #333;
 }
