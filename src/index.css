@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(244,244,244);
+  background-color: #CFE7F250;
   color: #333;
 }
 
@@ -52,10 +52,10 @@ small {
 }
 
 .button {
-  background-color: rgba(0,0,0,0.75);
+  background-color:#3594C0;
   color: white;
   padding: 1rem 2rem;
-  border: 1px solid rgba(0,0,0,0.75);
+  border: 1px solid #3594C0;
   border-radius: 20px;
   font-size: 1.4rem;
   cursor: pointer;
@@ -63,7 +63,7 @@ small {
 }
 
 .button:hover {
-  background-color: rgba(0,0,0,0.85);
+  background-color:#3594C090;
 }
 
 @media (min-width: 786px) {
