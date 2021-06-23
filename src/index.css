@@ -118,7 +118,6 @@ input {
   margin-bottom: 2rem;
   background-color: white;
   display: flex;
- 
 }
 
 .card-image-mini {
@@ -141,5 +140,7 @@ input {
 }
 
 .btnCenter {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
