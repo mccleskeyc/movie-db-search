@@ -90,9 +90,18 @@ small {
 .card-title {
   margin-bottom: 0.5rem;
   font-size: 3.2rem;
+  text-align: center;
 }
 
 .card-image {
   margin: 0 auto;
   display: block;
+}
+
+input {
+  outline: none;
+}
+
+.small {
+  font-size: 80%;
 }

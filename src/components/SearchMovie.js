@@ -12,7 +12,7 @@ export default function SearchMovie() {
         try {
             const res = await fetch(url);
             const data  = await res.json();
-            console.log(data.results);
+            console.log(data);
             setMovies(data.results);
         }catch(err){
             console.error(err);
