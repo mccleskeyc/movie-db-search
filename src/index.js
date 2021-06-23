@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import SearchMovie from "./components/SearchMovie";
 
+
 class Main extends React.Component {
   render() {
     return (
