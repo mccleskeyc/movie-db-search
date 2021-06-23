@@ -33,6 +33,8 @@ export default function SearchMovie() {
         }
     }
 
+    
+
     return (
         <>
         <form className="form" onSubmit={searchMovies}>
@@ -48,6 +50,7 @@ export default function SearchMovie() {
             <button className="button" type="submit">Search</button>
         </form>
         <br />
+
         <div className="popularBtn" onClick={searchPopular}>Or, <u>see what's trending</u>.</div>
 
         <div className="card-list">
