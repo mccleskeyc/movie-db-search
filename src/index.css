@@ -165,3 +165,16 @@ a:active {
   text-decoration: none;
   color: #333;
 }
+
+.review-card {
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .25);
+  margin-bottom: 2rem;
+  background-color: white;
+  width: 50%;
+}
+
+.author {
+  text-align: right;
+}

@@ -33,20 +33,6 @@ export default function SearchMovie() {
         }
     }
 
-    const getReviews = async (e) => {
-        e.preventDefault();
-        const url = `https://api.themoviedb.org/3/trending/movie/day?api_key=5dcf7f28a88be0edc01bbbde06f024ab`;
-        
-        try {
-            const res = await fetch(url);
-            const data  = await res.json();
-            console.log(data);
-            setMovies(data.results);
-        }catch(err){
-            console.error(err);
-        }
-    }
-
     
 
     return (

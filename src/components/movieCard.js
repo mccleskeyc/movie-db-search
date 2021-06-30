@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import SuggestionCard from './SuggestionCard';
+import ReviewCard from './ReviewCard';
 export default function MovieCard({movie}){
     const [movies, setMovies] = useState([]);
     const recMovies = async (e) => {
@@ -49,6 +50,8 @@ export default function MovieCard({movie}){
             {movies.filter(movie => movie.poster_path).map(movie => (
                 <SuggestionCard movie={movie} key={movie.id} />
             ))}
+            <ReviewCard movie={movie} key={movie.id} />
+
         </div>
         
     )
