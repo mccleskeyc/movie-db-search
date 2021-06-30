@@ -15,6 +15,21 @@ export default function MovieCard({movie}){
             console.error(err);
         }
     }
+
+    const getReviews = async (e) => {
+        e.preventDefault();
+        const url = `https://api.themoviedb.org/3/movie/${movie.id}/reviews?api_key=5dcf7f28a88be0edc01bbbde06f024ab&language=en-US&page=1`;
+        
+        try {
+            const res = await fetch(url);
+            const data  = await res.json();
+            console.log(data);
+            setMovies(data.results);
+        }catch(err){
+            console.error(err);
+        }
+    }
+
     return (
          <div className="card">
             <img className="card-image"
@@ -27,6 +42,7 @@ export default function MovieCard({movie}){
             <div className="small"><p><b>RATING:</b> {movie.vote_average}</p></div>
             <p className="card-desc">{movie.overview}</p>
             <div className="btnCenter"><button onClick={recMovies} className="recButton">See more movies like this</button></div>
+            <div className="btnCenter"><button onClick={getReviews} className="recButton">See Reviews for {movie.title} </button></div>
             </div>
 
             
