@@ -8,7 +8,7 @@ export default function ReviewCard({movie}){
                 <br />
                 <div className="review-card">
                     <div className="card-content">
-                        <blockquote>"This is a sample review"</blockquote>
+                        <blockquote>"{movie.title}"</blockquote>
                         <div className="author"> - Author</div>
                     </div>
                 </div>
