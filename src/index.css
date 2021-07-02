@@ -110,6 +110,7 @@ input {
 .popularBtn {
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .card-mini {
